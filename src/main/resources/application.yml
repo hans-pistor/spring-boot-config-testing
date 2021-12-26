@@ -1,0 +1,11 @@
+application:
+  name: config-data-test
+  region: NAMR
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        consumer-in-0:
+          group: consumer-group-${application.environment}
+          destination: consumer-destination-${application.region}-${application.environment}-${application.data-center}

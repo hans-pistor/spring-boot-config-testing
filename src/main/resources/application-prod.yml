@@ -1,0 +1,18 @@
+application:
+  environment: production
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dc1
+application:
+  data-center: dc1
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dc2
+application:
+  data-center: dc2

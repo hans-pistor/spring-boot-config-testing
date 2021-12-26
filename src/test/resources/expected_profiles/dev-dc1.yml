@@ -1,0 +1,11 @@
+application:
+  name: config-data-test
+  region: NAMR
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        consumer-in-0:
+          group: consumer-group-development
+          destination: consumer-destination-NAMR-development-dc1
