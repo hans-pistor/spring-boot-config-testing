@@ -1,8 +1,9 @@
 # Testing in your configuration locally
 
 It's hard to validate your configuration (especially with lots of variable resolution) when you have infrastructure
-dependencies. The below pattern allowed us to validate important configuration settings locally while making big changes
-to the structure of our configuration layout.
+dependencies. Using the [EnvironmentLoader](src/test/java/com/hpistor/configtestingdemo/helpers/EnvironmentLoader.java)
+and [ProfilesTest](src/test/java/com/hpistor/configtestingdemo/ProfileTest.java) allowed us to validate important
+configuration settings locally while making changes to the structure of our configuration layout.
 
 ## How it works
 
